@@ -1,0 +1,25 @@
+<!-- <div>
+  <h3>Lakshmi Rajeswara Rao</h3>
+  <h4>Software Developer</h4>
+  <p>P. No. 63, Andhra Bank Colony, Asmangadh, <br>Moosarambagh, Hyderabad - 36</p>
+  <div>
+    <p>Phone:</p>
+    <p>9866489944</p>
+    <p>7893729944</p>
+  </div>
+</div> -->
+
+<div class="address-card">
+    <h3 class="name">{{user.name}} !</h3>
+    <h4 class="title">{{user.designation}}</h4>
+
+    <button (click)="toggleCollapse()">{{toggle}}</button>
+
+    <div *ngIf="!isCollapsed">
+      <p class="address">{{user.address}}</p>
+      <div *ngIf="user.phone.length > 0 " class="phone">
+        <p>Phone:</p>
+        <p *ngFor="let phoneNumber of user.phone">{{phoneNumber}}</p>
+      </div>
+    </div>
+</div>

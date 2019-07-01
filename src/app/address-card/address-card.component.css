@@ -1,0 +1,23 @@
+.address-card {
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.title {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.address {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.phone {
+    border-left: 1px solid red;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
